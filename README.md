@@ -12,7 +12,7 @@ Add the following dependency to your `pom.xml` file:
 
 ```xml
 <dependency>
-    <groupId>com.jerry.log</groupId>
+    <groupId>io.github.3431193795cl</groupId>
     <artifactId>log-spring-boot-starter</artifactId>
     <version>1.0.1</version>
 </dependency>
