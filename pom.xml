@@ -15,6 +15,7 @@
 
   <name>log-spring-boot-starter</name>
   <description>An open source component library that can help you store logs.</description>
+  <url>https://github.com/3431193795cl/log-spring-boot-starter</url>
 
   <licenses>
     <license>
@@ -22,6 +23,12 @@
       <url>http://www.opensource.org/licenses/mit-license.php</url>
     </license>
   </licenses>
+
+  <scm>
+    <connection>scm:git:git://github.com/3431193795cl/log-spring-boot-starter.git</connection>
+    <developerConnection>scm:git:ssh://github.com:3431193795cl/log-spring-boot-starter.git</developerConnection>
+    <url>https://github.com/3431193795cl/log-spring-boot-starter</url>
+  </scm>
 
   <developers>
     <developer>
