@@ -78,3 +78,6 @@ Example of user information:
 <img height="600px" src="static_file/alibaba.jpg" width="300px"/>
 
 <img height="600px" src="static_file/wechat.jpg" width="300px"/>
+
+## Contact me
+talphone/wechat: 15117286104
