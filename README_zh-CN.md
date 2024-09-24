@@ -74,8 +74,11 @@ log:
   "user_name": ""
 }
 ```
-## 捐助
 
+## 捐助
+<img height="600px" src="static_file/alibaba.jpg" width="300px"/>
+
+<img height="600px" src="static_file/wechat.jpg" width="300px"/>
 
 
 
