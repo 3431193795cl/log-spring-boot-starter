@@ -80,4 +80,4 @@ Example of user information:
 <img height="600px" src="static_file/wechat.jpg" width="300px"/>
 
 ## Contact me
-talphone/wechat: 15117286104
+Email: 3431193795@qq.com

@@ -81,7 +81,7 @@ log:
 <img height="600px" src="static_file/wechat.jpg" width="300px"/>
 
 ## 联系我
-电话/微信: 15117286104
+邮箱: 3431193795@qq.com
 
 
 
