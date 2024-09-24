@@ -14,7 +14,7 @@
 <dependency>
     <groupId>com.jerry.log</groupId>
     <artifactId>log-spring-boot-starter</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
@@ -57,9 +57,9 @@ create table sys_log
 ```yaml
 log:
   driver-class-name: com.mysql.cj.jdbc.Driver
-  jdbc-url: jdbc:mysql://81.69.37.6:3306/lzjd_party_db?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
-  username: root
-  password: Mxh1348743162!
+  jdbc-url: jdbc:mysql://localhost:3306/text_db?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+  username: localhost
+  password: localhost
   table-name: sys_log
   is-get-user-info: true
   address: cookie
