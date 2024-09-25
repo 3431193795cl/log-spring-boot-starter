@@ -30,6 +30,13 @@
     <url>https://github.com/3431193795cl/log-spring-boot-starter</url>
   </scm>
 
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/3431193795cl/log-spring-boot-starter</url>
+  </issueManagement>
+
+  <inceptionYear>2024</inceptionYear>
+
   <developers>
     <developer>
       <name>Jerry</name>

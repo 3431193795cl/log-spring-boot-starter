@@ -9,6 +9,7 @@ import org.jerry.log.business.service.IOperLogService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Slf4j
 @Service
@@ -31,8 +32,10 @@ public class OperLogServiceImpl implements IOperLogService {
                     log.error("日志记录失败！");
                 }
             } else {
-                log.error("日志表不存在存在！并开始创建！");
-                throw new TableNotExistException("日志表不存在存在！并开始创建！");
+                log.info("日志表不存在存在！并开始创建！");
+                sysLogDao.generateTable(conf.getTableName());
+                log.info("日志表创建成功！");
+                save(sysLog);
             }
         } catch (Exception e) {
             log.error("Error occurred while checking table existence", e);
