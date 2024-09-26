@@ -14,7 +14,7 @@ Add the following dependency to your `pom.xml` file:
 <dependency>
     <groupId>io.github.3431193795cl</groupId>
     <artifactId>log-spring-boot-starter</artifactId>
-    <version>1.0.1</version>
+    <version>${log-spring-boot-starter.version}</version>
 </dependency>
 ```
 Add a data table to your database:
