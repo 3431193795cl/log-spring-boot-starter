@@ -16,25 +16,25 @@ public class LogProperties {
      */
     private Boolean enable = false;
 
-    /**
-     * 数据库地址
-     */
-    private String jdbcUrl;
-
-    /**
-     * 数据库驱动
-     */
-    private String driverClassName;
-
-    /**
-     * 数据库账号
-     */
-    private String username;
-
-    /**
-     * 密码
-     */
-    private String password;
+//    /**
+//     * 数据库地址
+//     */
+//    private String jdbcUrl;
+//
+//    /**
+//     * 数据库驱动
+//     */
+//    private String driverClassName;
+//
+//    /**
+//     * 数据库账号
+//     */
+//    private String username;
+//
+//    /**
+//     * 密码
+//     */
+//    private String password;
 
     /**
      * 表名

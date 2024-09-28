@@ -7,10 +7,12 @@ import org.jerry.log.business.service.IOperLogService;
 import org.jerry.log.business.service.impl.OperLogServiceImpl;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
@@ -22,7 +24,8 @@ import javax.sql.DataSource;
 public class LogAutoConfigure {
 
     @Resource
-    private LogProperties dbScanClass;
+    private Environment environment;
+
 
     @Bean
     @ConditionalOnMissingBean
@@ -38,13 +41,14 @@ public class LogAutoConfigure {
     }
 
     @Bean
+    @ConfigurationProperties(prefix = "spring.datasource")
     DataSource dataSource() {
         log.info("数据库注入成功！");
         DataSourceBuilder<?> dataSourceBuilder = DataSourceBuilder.create();
-        dataSourceBuilder.driverClassName(dbScanClass.getDriverClassName());
-        dataSourceBuilder.url(dbScanClass.getJdbcUrl());
-        dataSourceBuilder.username(dbScanClass.getUsername());
-        dataSourceBuilder.password(dbScanClass.getPassword());
+        dataSourceBuilder.driverClassName(environment.getRequiredProperty("spring.datasource.driver-class-name"));
+        dataSourceBuilder.url(environment.getRequiredProperty("spring.datasource.url"));
+        dataSourceBuilder.username(environment.getRequiredProperty("spring.datasource.username"));
+        dataSourceBuilder.password(environment.getRequiredProperty("spring.datasource.password"));
         return dataSourceBuilder.build();
     }
 
