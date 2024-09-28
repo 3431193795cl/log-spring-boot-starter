@@ -55,10 +55,6 @@ Of course, you can also do this by writing some code yourself.
 For the frequent self-test of local development, you can set the following configuration in application.yml, which currently only supports Mysql database. You can store ${user-info-key} (user-defined) in the front-end cookie or session, and you need to encrypt it through the symmetric encryption algorithm provided by the back-end.
 ```yaml
 log:
-  driver-class-name: com.mysql.cj.jdbc.Driver
-  jdbc-url: jdbc:mysql://localhost:3306/text_db?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
-  username: localhost
-  password: localhost
   table-name: sys_log
   is-get-user-info: true
   address: cookie

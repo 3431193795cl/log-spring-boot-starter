@@ -56,10 +56,6 @@ create table sys_log
 
 ```yaml
 log:
-  driver-class-name: com.mysql.cj.jdbc.Driver
-  jdbc-url: jdbc:mysql://localhost:3306/text_db?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
-  username: localhost
-  password: localhost
   table-name: sys_log
   is-get-user-info: true
   address: cookie
