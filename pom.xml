@@ -111,7 +111,7 @@
 
   </dependencies>
 
-
+//mvn clean install -Dmevan,.text.
   <build>
     <plugins>
       <plugin>

@@ -63,7 +63,7 @@ public class SysLogDao {
         // 初始化DDL语句构建器
         jdbcTemplate.execute("create table "+tableName+"\n" +
                 "(\n" +
-                "    id             varchar(32)   not null comment '主键'\n" +
+                "    id             int  not null comment '主键'\n" +
                 "        primary key,\n" +
                 "    title          varchar(32)   null comment '模块标题',\n" +
                 "    content        varchar(225)  null comment '日志内容',\n" +
